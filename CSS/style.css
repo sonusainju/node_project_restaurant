@@ -18,7 +18,7 @@ body{
 
 
 .nav-link{
-    font-size: 20px;
+    font-size: 30px;
     color: #6F816B;
     margin-left: 10px;
     margin-right: 10px;
@@ -73,19 +73,17 @@ body{
 
     /* Full height */
     height:100%;
-    min-height: 600px;
+    min-height: 800px;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    z-index: -10;
   }
 
   .parallax h1{
-      font-size: 100px;
+      font-size: 120px;
       color:whitesmoke;
       transform: rotate(-5deg);
       font-family: 'Pacifico', cursive;
