@@ -1,0 +1,106 @@
+
+/* *{
+    border:1px solid red;
+
+
+} */
+body{
+    background-color: black;
+}
+.menu-bar{
+    background:black;
+    margin-bottom: 10px;
+}
+
+.navbar{
+    min-height:20px;
+}
+
+
+.nav-link{
+    font-size: 20px;
+    color: #6F816B;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav-link:hover{
+    color: white;
+}
+
+.active
+{
+    font-weight: bold;
+}
+
+.navbar-toggler .fas
+{
+    color: black;
+    padding:0;
+    height:50px;
+}
+
+.banner{
+    margin-top:0px;
+    padding:0;
+    position: relative;
+    background-color: black;
+    overflow:hidden;
+    /* background:url("../Images/background-5.png"); */
+}
+
+.banner img{
+    max-width:100%;
+    height:auto;
+}
+
+
+.info-a{
+    /* margin-top:10px;; */
+    color: whitesmoke;
+    margin-bottom: 0;
+}
+.info-b{
+    color: #7C7790;
+
+    /* padding-left: 200px; */
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../Images/ambience1.jpg");
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Images/ambience1.jpg");
+
+
+    /* Full height */
+    height:100%;
+    min-height: 600px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: -10;
+  }
+
+  .parallax h1{
+      font-size: 100px;
+      color:whitesmoke;
+      transform: rotate(-5deg);
+      font-family: 'Pacifico', cursive;
+
+  }
+
+  .bon-apetit{
+      margin-bottom: 120px;
+
+  }
+
+  
+  .form-row{
+      margin: 0 auto;
+
+  }
+
+
