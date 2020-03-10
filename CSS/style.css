@@ -48,23 +48,6 @@ body{
     /* background:url("../Images/background-5.png"); */
 }
 
-.banner img{
-    max-width:100%;
-    height:auto;
-}
-
-
-.info-a{
-    /* margin-top:10px;; */
-    color: whitesmoke;
-    margin-bottom: 0;
-}
-.info-b{
-    color: #7C7790;
-
-    /* padding-left: 200px; */
-}
-
 .parallax {
     /* The image used */
     background-image: url("../Images/ambience1.jpg");
@@ -91,6 +74,7 @@ body{
   }
 
   .bon-apetit{
+      margin-top: 50px;
       margin-bottom: 120px;
 
   }
@@ -101,4 +85,23 @@ body{
 
   }
 
+  .contact-container{
+      margin:10px;
+      margin-left: 30px;
+      margin-right: 30px;
+      width:100%;
+
+  }
+
+  .contact-heading
+  {
+    color:#7C7790;
+    font-size: 1.5em;
+  }
+
+  .contact1, .contact2{
+      /* margin-left:10px; */
+      color: whitesmoke;
+
+  }
 
