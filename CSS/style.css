@@ -10,7 +10,7 @@ body{
 .menu-bar{
     background:black;
     margin-bottom: 10px;
-}
+    }
 
 .navbar{
     min-height:20px;
@@ -22,6 +22,7 @@ body{
     color: #6F816B;
     margin-left: 10px;
     margin-right: 10px;
+
 }
 .nav-link:hover{
     color: white;
@@ -70,15 +71,12 @@ body{
       color:whitesmoke;
       transform: rotate(-5deg);
       font-family: 'Pacifico', cursive;
-
   }
 
   .bon-apetit{
       margin-top: 50px;
       margin-bottom: 120px;
-
   }
-
   
   .form-row{
       margin: 0 auto;
@@ -86,11 +84,9 @@ body{
   }
 
   .contact-container{
-      margin:10px;
-      margin-left: 30px;
-      margin-right: 30px;
-      width:100%;
+    /* padding:0px; */
 
+      /* margin-top:10px; */
   }
 
   .contact-heading
@@ -104,4 +100,14 @@ body{
       color: whitesmoke;
 
   }
+  .map
+  {
+      padding:0;
+      overflow:hidden;
+  }
 
+.thumbnail img{
+    margin-bottom: 10px;
+    overflow:hidden;     
+    width:100%;
+}
