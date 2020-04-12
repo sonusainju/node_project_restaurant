@@ -149,10 +149,8 @@ body{
       background-color: rgb(7, 41, 53, 0.4);
 
   }
-  .menu-header-row{
-  }
 
-  .menu-header-row h1{
+  #menu-header-row h1{
     /* border: 2px solid white; */
     padding: 20px;
     color: #7c7790;
