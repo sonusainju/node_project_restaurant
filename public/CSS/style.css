@@ -84,7 +84,8 @@ body{
   }
 
   .contact-container{
-       margin-bottom:20px;
+       margin-bottom:35px;
+       background-color: rgb(7, 41, 53, 0.4);
   }
 
   .contact-heading
@@ -95,7 +96,9 @@ body{
 
   .contact1, .contact2{
       /* margin-left:10px; */
-      color: whitesmoke;
+      /* background-color: rgb(5, 21, 27); */
+
+      color:rgba(238, 234, 174, 0.7);
 
   }
   .map
@@ -142,8 +145,9 @@ body{
 
   .menu-container {
       margin-top: 20px;
-      background-color: rgb(2, 27, 39, 0.4);
       padding: 10px 0;
+      background-color: rgb(7, 41, 53, 0.4);
+
   }
   .menu-header-row{
   }
@@ -156,14 +160,13 @@ body{
 
   .menu-item-container {
     font-family: 'Marck Script', cursive;
-    font-size: 20px;
-    font-weight: bold;
-      color:#636754;
-      margin:10px 0;
+    /* font-size: 15px; */
+    color:rgba(238, 234, 174, 0.7);
+    margin:40px 0;
   }
 
   .menu-item-span{
       padding-left: 15px;
       width: 60%;
-
+      font-size: 20px;
   }
