@@ -5,11 +5,11 @@
 
 } */
 body{
-    background-color: black;
+    background-color: #343A30;
 }
 .menu-bar{
     background:black;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     }
 
 .navbar{
@@ -19,7 +19,7 @@ body{
 
 .nav-link{
     font-size: 30px;
-    color: #9793a7;
+    color: #b7b1d4;
     margin-left: 10px;
     margin-right: 10px;
 
@@ -41,7 +41,7 @@ body{
 }
 
 .banner{
-    margin-top:0px;
+    margin-top:25px;
     padding:0;
     position: relative;
     background-color: black;
@@ -90,7 +90,7 @@ body{
 
   .contact-heading
   {
-    color:#9793a7;
+    color:#b7b1d4;
     font-size: 1.5em;
   }
 
@@ -153,7 +153,7 @@ body{
   #menu-header-row h1{
     /* border: 2px solid white; */
     padding: 20px;
-    color: #7c7790;
+    color: #b7b1d4;
   }
 
   .menu-item-container {
