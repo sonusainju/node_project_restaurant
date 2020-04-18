@@ -90,5 +90,5 @@ app.post('/register', async(req,res)=> {
 const port = process.env.PORT;
 
 app.listen(port, function() {
-    console.log('Example app listening on'  );
+    console.log('Example app listening on ${port}');
   });
