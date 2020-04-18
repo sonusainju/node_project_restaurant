@@ -9,6 +9,16 @@ const bcrypt = require("bcrypt");
 const passport = require("passport");
 const flash = require('express-flash');
 const session = require('express-session');
+const mongoose = require('mongoose');
+
+// Connection to mongoose
+mongoose.connect(process.env.DATABASE_URL, {
+    useNewUrlParser: true
+});
+
+const db = mongoose.connection;
+db.on('error', error => console.log(error));
+db.once('open', ()=> console.log('Connected to Mongoose'));
 
 const initializePassport = require('./passport-config')
 initializePassport(
@@ -56,7 +66,7 @@ app.get("/register", function(req, res) {
 app.post('/login', passport.authenticate('local', {
     successRedirect: '/',
     failureRedirect: '/login',
-
+    failureFlash: true
 }));
 
 app.post('/register', async(req,res)=> {
@@ -77,6 +87,6 @@ app.post('/register', async(req,res)=> {
 
 });
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("Example app listening on port 3000!");
   });
