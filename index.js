@@ -1,9 +1,7 @@
 if(process.env.NODE_ENV !== 'production'){
     require('dotenv').config()
 }
-if(process.env.NODE_ENV=='production'){
-    alert(process.env.DATABASE_URL);
-}
+
 const path = require("path");
 const express = require("express");
 const app = express();
@@ -14,13 +12,29 @@ const session = require('express-session');
 const mongoose = require('mongoose');
 
 // Connection to mongoose
-mongoose.connect(process.env.DATABASE_URL, {
-    useNewUrlParser: true
+mongoose.connect( process.env.DATABASE_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 });
 
 const db = mongoose.connection;
 db.on('error', error => console.log(error));
 db.once('open', ()=> console.log('Connected to Mongoose'));
+
+var dishModel = require("./models/dish.model");
+
+// dishModel.insertMany([{name:"Classic Momo 3", desription:"lorem ipsum", unitPrice:12}]);
+
+// const dishes = dishModel.find().exec(function (err, docs) {
+//     if (err){
+//         console.log(err)
+
+//     }
+//     docs.forEach(function(doc){
+//         console.log(doc.name)
+//     })
+// });
+
 
 const initializePassport = require('./passport-config')
 initializePassport(
@@ -92,5 +106,5 @@ app.post('/register', async(req,res)=> {
 const port = process.env.PORT;
 
 app.listen(port, function() {
-    console.log('Example app listening on ${port}');
+    console.log(`Example app listening on ${port}`);
   });
