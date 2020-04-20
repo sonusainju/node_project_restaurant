@@ -20,6 +20,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
+    <script src="/assets/Scripts/order.js" async></script>
   </head>
 
   <body>
@@ -31,10 +32,13 @@
 
         <ul class="list-unstyled components">
             <a href="/">
-                <img src="/assets/Images/logo-8.png" width="100%">
+                <img id="brand" src="/assets/Images/logo-8.png" width="100%">
               </a>
             <a href="/login">
                 <p>Hi, Guest</p>
+            </a>
+            <a href="#cart">
+                <i class="fas fa-shopping-cart"></i><span>Cart</span>
             </a>
             <li><!-- <li class="active"> -->
                 <a href="#classic-momo" aria-expanded="false">Classic Momo</a>
@@ -78,60 +82,25 @@
                 <h2>Classic Momo</h2>
             </a>
  
-
-            <div class="row justify-content-center">
+            <div class="row justify-content-center menu-item">
                 <div class="col-md-10">
                     <span class="item-title">Classic Momo 1</span>
                     <span class="item-price">$12</span>
                     <p class="item-detail">Lorem ipsum dolor sit amipisicing elit, tur adip consectetur adet,ipisicing elit, tur adip consectetur adipisicing elit, tur adipisicing elit, sed do eiusmod tempor incididunt ut labosed do eiusmod tempor incididunt ut labore et dolore</p>
                 </div>
                 <div class="col-md-2">
-                    <form>
-                        <div class="form-row align-items-center">
-                          <div class="col-auto my-1">
-                            <label class="mr-sm-2" for="inlineFormCustomSelect">Qty</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                              <option selected>Choose...</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                              <option value="4">Four</option>
-                              <option value="5">Five</option>
-                              <option value="6">Six</option>
-                              <option value="7">Seven</option>
-                              <option value="8">Eight</option>
-                            </select>
-                          </div>
-                        </div>
-                    </form>
+                    <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
                 </div>
             </div>
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center menu-item">
                 <div class="col-md-10">
                     <span class="item-title">Classic Momo 2</span>
                     <span class="item-price">$12</span>
                     <p class="item-detail">Lorem ipsum dolor sit amipisicing elit, tur adip consectetur adet,ipisicing elit, tur adip consectetur adipisicing elit, tur adipisicing elit, sed do eiusmod tempor incididunt ut labosed do eiusmod tempor incididunt ut labore et dolore</p>
                 </div>
                 <div class="col-md-2">
-                    <form>
-                        <div class="form-row align-items-center">
-                          <div class="col-auto my-1">
-                            <label class="mr-sm-2" for="inlineFormCustomSelect">Qty</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                              <option selected>Choose...</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                              <option value="4">Four</option>
-                              <option value="5">Five</option>
-                              <option value="6">Six</option>
-                              <option value="7">Seven</option>
-                              <option value="8">Eight</option>
-                            </select>
-                          </div>
-                        </div>
-                    </form>
+                    <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
                 </div>
             </div>
 
@@ -141,31 +110,24 @@
             <a id="chilli-momo">
                 <h2>Chilli Momo</h2>
             </a>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center menu-item">
                 <div class="col-md-10">
                     <span class="item-title">Chilli Momo 1</span>
                     <span class="item-price">$12</span>
                     <p class="item-detail">Lorem ipsum dolor sit amipisicing elit, tur adip consectetur adet,ipisicing elit, tur adip consectetur adipisicing elit, tur adipisicing elit, sed do eiusmod tempor incididunt ut labosed do eiusmod tempor incididunt ut labore et dolore</p>
                 </div>
                 <div class="col-md-2">
-                    <form>
-                        <div class="form-row align-items-center">
-                          <div class="col-auto my-1">
-                            <label class="mr-sm-2" for="inlineFormCustomSelect">Qty</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                              <option selected>Choose...</option>
-                              <option value="1">One</option>
-                              <option value="2">Two</option>
-                              <option value="3">Three</option>
-                              <option value="4">Four</option>
-                              <option value="5">Five</option>
-                              <option value="6">Six</option>
-                              <option value="7">Seven</option>
-                              <option value="8">Eight</option>
-                            </select>
-                          </div>
-                        </div>
-                    </form>
+                    <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="row justify-content-center menu-item">
+                <div class="col-md-10">
+                    <span class="item-title">Chilli Momo 2</span>
+                    <span class="item-price">$12</span>
+                    <p class="item-detail">Lorem ipsum dolor sit amipisicing elit, tur adip consectetur adet,ipisicing elit, tur adip consectetur adipisicing elit, tur adipisicing elit, sed do eiusmod tempor incididunt ut labosed do eiusmod tempor incididunt ut labore et dolore</p>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
                 </div>
             </div>
             <div class="line"></div>
@@ -173,15 +135,58 @@
             <a id="momo-soups">
                 <h2>Momo Soups</h2>
             </a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    
+            <div class="row justify-content-center menu-item">
+                <div class="col-md-10">
+                    <span class="item-title">Momo Soup 1</span>
+                    <span class="item-price">$12</span>
+                    <p class="item-detail">Lorem ipsum dolor sit amipisicing elit, tur adip consectetur adet,ipisicing elit, tur adip consectetur adipisicing elit, tur adipisicing elit, sed do eiusmod tempor incididunt ut labosed do eiusmod tempor incididunt ut labore et dolore</p>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="row justify-content-center menu-item">
+                <div class="col-md-10">
+                    <span class="item-title">Momo Soup 2</span>
+                    <span class="item-price">$12</span>
+                    <p class="item-detail">Lorem ipsum dolor sit amipisicing elit, tur adip consectetur adet,ipisicing elit, tur adip consectetur adipisicing elit, tur adipisicing elit, sed do eiusmod tempor incididunt ut labosed do eiusmod tempor incididunt ut labore et dolore</p>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
             <div class="line"></div>
     
             <a id="momo-salads">
                 <h2>Momo Salads</h2>
             </a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>        
+            <div class="row justify-content-center menu-item">
+                <div class="col-md-10">
+                    <span class="item-title">Momo Salad 1</span>
+                    <span class="item-price">$12</span>
+                    <p class="item-detail">Lorem ipsum dolor sit amipisicing elit, tur adip consectetur adet,ipisicing elit, tur adip consectetur adipisicing elit, tur adipisicing elit, sed do eiusmod tempor incididunt ut labosed do eiusmod tempor incididunt ut labore et dolore</p>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>   
+        <section class="container content-section">
+            <h2 class="section-header" id="cart">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        
     </div>
 </div>
     <script
